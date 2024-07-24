@@ -354,3 +354,12 @@ input[type="submit"] {
 	}
 }
 
+footer{
+	background-color: #1C6474;
+	color: white;
+	padding-block: 1em;
+	text-align: center;
+	& a {
+		color: white;
+	}
+}
