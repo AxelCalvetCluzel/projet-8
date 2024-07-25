@@ -353,7 +353,11 @@ input[type="submit"] {
 		width: 80%;
 	}
 }
-
+.carousel-item img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
 footer{
 	background-color: #1C6474;
 	color: white;

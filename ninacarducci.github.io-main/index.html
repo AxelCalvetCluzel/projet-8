@@ -129,6 +129,16 @@
             <div class="carousel-item active">
               <img
                 src="./assets/images/slider/homme-qui-marche.webp"
+                srcset="
+                  ./assets/images/slider/homme-qui-marche-480.webp   480w,
+                  ./assets/images/slider/homme-qui-marche-768.webp   768w,
+                  ./assets/images/slider/homme-qui-marche-1024.webp 1024w,
+                  ./assets/images/slider/homme-qui-marche.webp      1356w
+                "
+                sizes="(max-width: 480px) 480px,
+                   (max-width: 768px) 768px,
+                   (max-width: 1024px) 1024px,
+                   1356px"
                 class="d-block w-100 img-fluid"
                 alt="homme qui marche"
                 width="1920"
