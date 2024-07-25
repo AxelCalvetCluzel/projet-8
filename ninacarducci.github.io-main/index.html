@@ -10,11 +10,9 @@
     />
     <meta name="author" content="Nina Carducci" />
     <meta name="copyright" content="© Nina Carducci" />
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@ninacarducci" />
     <meta name="twitter:creator" content="@ninacarducci" />
-    <!-- Facebook -->
     <meta property="og:url" content="https://ninacarducci.github.io" />
     <meta property="og:title" content="Nina Carducci - Photographe" />
     <meta
@@ -49,6 +47,34 @@
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
       rel="stylesheet"
     />
+    <script type="apllication/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Nina Carducci",
+        "url": "https://ninacarducci.github.io",
+        "image": "https://ninacarducci.github.io/assets/images/nina.webp",
+        "sameAs": [
+          "https://www.instagram.com/ninacarducci.photo/?hl=fr"
+        ]
+        "telephone": "05 57 67 78 89",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "postalCode": "33200",
+          "addressCountry": "France"
+        }
+        "open": "Lundi- Vendredi de 10h à 19h.
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+      }
+    </script>
   </head>
   <body>
     <header class="top-header">
@@ -101,39 +127,33 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <picture>
-                <source
-                  srcset="./assets/images/slider/homme-qui-marche-mobile.webp"
-                  media="(max-width: 768px)" />
-                <img
-                  src="./assets/images/slider/homme-qui-marche.webp"
-                  class="d-block w-100"
-                  alt="homme qui marche"
-              /></picture>
+              <img
+                src="./assets/images/slider/homme-qui-marche.webp"
+                class="d-block w-100 img-fluid"
+                alt="homme qui marche"
+                width="1920"
+                height="886"
+              />
             </div>
             <div class="carousel-item">
-              <picture>
-                <source
-                  srcset="./assets/images/slider/une-foule-mobile.webp"
-                  media="(max-width: 768px)" />
-                <img
-                  src="./assets/images/slider/une-foule.webp"
-                  class="d-block w-100"
-                  alt="une foule"
-              /></picture>
+              <img
+                src="./assets/images/slider/une-foule.webp"
+                class="d-block w-100 img-fluid"
+                alt="une foule"
+                width="1356"
+                height="626"
+                loading="lazy"
+              />
             </div>
             <div class="carousel-item">
-              <picture>
-                <source
-                  srcset="
-                    ./assets/images/slider/personnes-qui-sembrasse-mobile.webp
-                  "
-                  media="(max-width: 768px)" />
-                <img
-                  src="./assets/images/slider/personnes-qui-sembrasse.webp"
-                  class="d-block w-100"
-                  alt="personnes qui s'embrasse"
-              /></picture>
+              <img
+                src="./assets/images/slider/personnes-qui-sembrasse.webp"
+                class="d-block w-100 img-fluid"
+                alt="personnes qui s'embrasse"
+                width="1356"
+                height="626"
+                loading="lazy"
+              />
             </div>
           </div>
           <button
@@ -158,7 +178,13 @@
       </section>
       <section id="about">
         <div class="picture left">
-          <img src="./assets/images/nina.webp" alt="Nina Carducci" />
+          <img
+            src="./assets/images/nina.webp"
+            alt="Nina Carducci"
+            width="600"
+            height="400"
+            class="img-fluid"
+          />
         </div>
         <div id="about-me">
           <h2 class="about-me__title">À propos de moi</h2>
@@ -187,57 +213,84 @@
           <div class="gallery" style="display: none">
             <img
               data-gallery-tag="Concert"
-              class="gallery-item"
+              class="gallery-item img-fluid"
               src="./assets/images/gallery/concerts/concert-1.webp"
               alt="Concert"
+              width="440"
+              height="440"
+              loading="lazy"
             />
             <img
               data-gallery-tag="Entreprises"
-              class="gallery-item"
+              class="gallery-item img-fluid"
               src="./assets/images/gallery/entreprise/homme-en-costume.webp"
               alt="homme en costume"
+              width="440"
+              height="440"
+              loading="lazy"
             />
             <img
               data-gallery-tag="Entreprises"
-              class="gallery-item"
+              class="gallery-item img-fluid"
               src="./assets/images/gallery/entreprise/femme-qui-sourit.webp"
               alt="femme qui sourit"
+              width="440"
+              height="440"
+              loading="lazy"
             />
             <img
               data-gallery-tag="Mariages"
-              class="gallery-item"
+              class="gallery-item img-fluid"
               src="./assets/images/gallery/mariage/les-mariés.webp"
               alt="les mariés"
+              width="440"
+              height="440"
+              loading="lazy"
             />
             <img
               data-gallery-tag="Portrait"
-              class="gallery-item"
+              class="gallery-item img-fluid"
               src="./assets/images/gallery/portraits/homme-qui-ferme-les-yeux.webp"
               alt="homme qui ferme les yeux"
+              width="440"
+              height="440"
+              loading="lazy"
             />
             <img
               data-gallery-tag="Mariages"
-              class="gallery-item"
+              class="gallery-item img-fluid"
               src="./assets/images/gallery/mariage/main-des-mariés.webp"
               alt="main des mariés"
+              width="440"
+              height="440"
+              loading="lazy"
             />
             <img
               data-gallery-tag="Portrait"
-              class="gallery-item"
+              class="gallery-item img-fluid"
               src="./assets/images/gallery/portraits/femme-derriere-un-grillage.webp"
               alt="femme derriere un grillage"
+              width="440"
+              height="440"
+              loading="lazy"
             />
             <img
               data-gallery-tag="Concert"
-              class="gallery-item"
+              class="gallery-item img-fluid"
               src="./assets/images/gallery/concerts/concert-2.webp"
               alt="Concert"
+              width="440"
+              height="440"
+              loading="lazy"
             />
             <img
               data-gallery-tag="Entreprises"
-              class="gallery-item"
+              class="gallery-item img-fluid"
               src="./assets/images/gallery/entreprise/femme-devant-un-ordinateur.webp"
               alt="femme devant un ordinateur"
+              width="440"
+              height="440"
+              loading="lazy"
             />
           </div>
         </div>
@@ -339,7 +392,14 @@
             </form>
           </div>
           <div class="picture right">
-            <img src="./assets/images/camera.webp" alt="Camera" />
+            <img
+              src="./assets/images/camera.webp"
+              alt="Camera"
+              class="img-fluid"
+              loading="lazy"
+              width="420"
+              height="420"
+            />
           </div>
         </div>
       </section>
